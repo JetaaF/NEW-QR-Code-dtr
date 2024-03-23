@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="krejt">
+        <div class="nalt"><input class="in1" placeholder="Enter code" type="text">
+            <input class="cl" placeholder="Enter colour code" type="text">
+        </div>
+        <div class="mes"><img class="lon" src="" alt=""></div>
+        <div class="posht">
+            <button onclick="con()" class="button-6" role="button" >Click</button>
+            <a href="img"download><button class="button-6">Download</button></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function con() {
+            let butta = document.querySelector(".in1").value
+            let colur = document.querySelector(".cl").value
+            document.querySelector("img").src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + butta + "&color=" + colur
+
+        }
+    </script>
+    
+</body>
+
+</html>
